@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700;900&display=swap');
+
+nav.navbar {
+    padding: 15px 0;
+}
+
+nav .navbar--logo {
+
+}
+
+nav .navbar--menu-items li{
+    display: inline-block;
+    padding: 0 10px;
+    color: #506862;
+    font-weight: bold;
+}
+
+.main--hero {
+    padding: 60px 0;
+    background-color: #fef7e0;
+}
+
+.main-hero--left-name {
+    color: #ef664d;
+}
+
+.button-primary {
+    background-color:#ef664d ;
+    color: #fff;
+    padding: 15px;
+}
+
+.left-social--icons {
+    font-size: 30px;
+}
+
+.main-hero--right-item {
+    width: 50%;
+}
+
+.main-hero--right-item img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.main-about {
+    padding: 60px 0;
+}
+
+.about--left-item {
+    width: 50%;
+    
+}
+
+.about--left-item img {
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.about--right-item {
+    width: 50%;
+}
+
+.main--technologies {
+    background-color: #4cb1b3;
+    padding: 60px 0;
+}
+
+.tech--item {
+    max-width: 120px;
+    padding: 0 10px;
+    height: 100%;
+}
+
+.main--projects {
+    padding: 60px 0;
+}
+
+.projects--tab li{
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #4cb1b3;
+    color: #fff;
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0 6px;
+
+}
+
+.projects--card {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.projects--card-thumb img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.projects--card-title {
+    padding: 15px 10px;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+}
+
+.projects--card-description {
+    padding: 15px;
+}
+
+.projects--card-description .name {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.projects--card-description .external-link {
+    font-size: 0.85rem;
+}
+
+.main--services {
+    padding: 60px 0;
+}
+
+.services--card {
+    border-radius: 10px;
+    background-color: #77cba8;
+    padding: 25px;
+    margin: 0px 5px;
+}
+
+.services--card-icon i {
+    font-size: 2rem;
+    color: #816e0f;
+}
+
+.services--card-title h5 {
+    font-weight: bold;
+}
+
+.main--contact {
+    padding: 60px 0;
+    background-color: #fef7e0;
+}
+
+.icon--contact i {
+    font-size: 2rem;
+    color: #816e0f;
+}
+
+.question-body--email {
+    color: #816e0f;
+}
+
+footer {
+    padding: 60px 0;
+}
+
+footer .footer-text {
+    font-size: .75rem;
+    opacity: .6;
+}
+
+.button-see-work {
+    cursor: pointer;
+}

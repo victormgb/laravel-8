@@ -15,7 +15,10 @@ class CreateSkillPerProjectTable extends Migration
     {
         Schema::create('skill_per_project', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->unsignedBigInteger('id_skill');
+            $table->unsignedBigInteger('id_project');
+            $table->foreign('id_skill')->references('id')->on('skills');
+            $table->foreign('id_project')->references('id')->on('projects');
         });
     }
 

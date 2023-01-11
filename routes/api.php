@@ -3,6 +3,9 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\SkillController;
+use App\Http\Controllers\ProjectController;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -17,3 +20,8 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::resource("/skills",SkillController::class);
+Route::resource("/projects",ProjectController::class);
+Route::post("/skills/update/{id}", [SkillController::class, 'update']);
+Route::post("/projects/update/{id}", [ProjectController::class, 'update']);
