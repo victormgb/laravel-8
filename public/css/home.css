@@ -28,6 +28,7 @@ nav .navbar--menu-items li{
     background-color:#ef664d ;
     color: #fff;
     padding: 15px;
+    cursor: pointer;
 }
 
 .left-social--icons {

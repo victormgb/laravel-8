@@ -218,7 +218,7 @@
                                 <h5> High Level Process and communication </h5>
                             </div>
                             <div class="services--card-description">
-                                I have experience developping projects from zero to production.
+                                I have experience developing projects from zero to production.
                             </div>
                         </div>
                     </div>
@@ -258,22 +258,20 @@
                         </div>
                         <div class="col-6 d-flex justify-content-end">
                             <div class="contact-form">
-                                <form action="">
+                                <form action="{{url('sendMail')}}" method="post">
+                                    @csrf
                                     <div class="row">
                                         <div class="col-6">
-                                            <input type="text" class="form-control" placeholder="Your Name">
+                                            <input type="text" class="form-control" placeholder="Your Name" name="name">
                                         </div>
                                         <div class="col-6">
-                                            <input type="text" class="form-control" placeholder="Your Email">
+                                            <input type="text" class="form-control" placeholder="Your Email" name="email">
                                         </div>
 
                                         <div class="col-12 mt-4">
                                             <textarea name="message" id="" cols="30" rows="10" placeholder="Your message" class="form-control"></textarea>
-                                            <button class="button-primary mt-3">Send Message</button>
+                                            <button class="button-primary mt-3" type="submit">Send Message</button>
                                         </div>
-                                        
-                                        
-
                                     </div>
                                 </form>
                             </div>
