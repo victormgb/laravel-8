@@ -143,7 +143,7 @@
                                 @endforeach
                             </div>
                             <div class="projects--card-description">
-                                <a href="{{$project->link}}"><p class="name font-weigth-bold">{{$project->name}}</p></a>
+                                <a href="{{$project->link}}" target="_blank"><p class="name font-weigth-bold">{{$project->name}}</p></a>
                                 <a href="{{$project->url_github}}" class="external-link" target="_blank">
                                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
                                     {{$project->url_github}}
