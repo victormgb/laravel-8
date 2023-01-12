@@ -119,11 +119,11 @@
             <div class="main--projects container" id="portfolio">
                 <h1 class="text-center">My Projects</h1>
                 
-                <ul class="projects--tab mt-5 text-center">
+                <!-- <ul class="projects--tab mt-5 text-center">
                     @foreach ($skills as $skill)
                     <li>{{$skill->name}}</li>
                     @endforeach
-                </ul>
+                </ul> -->
 
                 <!-- Projects Table -->
                 <div class="row mt-5 ">
@@ -143,7 +143,7 @@
                                 @endforeach
                             </div>
                             <div class="projects--card-description">
-                                <p class="name font-weigth-bold">{{$project->name}}</p>
+                                <a href="{{$project->link}}"><p class="name font-weigth-bold">{{$project->name}}</p></a>
                                 <a href="{{$project->url_github}}" class="external-link" target="_blank">
                                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
                                     {{$project->url_github}}
