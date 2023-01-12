@@ -30,7 +30,7 @@
     <body class="antialiased">
         <!-- NAVBAR -->
         <nav class="navbar">
-            <div class="container d-flex justify-content-between">
+            <div class="container d-flex justify-content-between flex-column flex-md-row">
                 <!-- LOGO -->
                 <div class="navbar--logo">
                     <h1><strong>VMGB Web</strong></h1>
@@ -53,9 +53,9 @@
         <main>
             <!-- HERO-->
             <div class="main--hero" id="home">
-                <div class="main-hero--container container d-flex">
+                <div class="main-hero--container container d-flex flex-column flex-md-row">
                     <!-- LEFT SECTION -->
-                    <div class="main-hero--left-item w-50">
+                    <div class="main-hero--left-item w-100">
                         <div class="main-hero--left-name">
                             <p><strong>Hey, I'm Victor! 👋</strong></p>
                         </div>
@@ -78,7 +78,7 @@
                         </div>
                     </div>
                     <!-- RIGHT SECTION -->
-                    <div class="main-hero--right-item d-flex align-items-center">
+                    <div class="main-hero--right-item d-flex align-items-center w-100">
                         <img src="/img/man-g6d5006abd_1920.jpg"> 
                     </div>
                 </div>
@@ -86,18 +86,18 @@
 
 
             <!-- SECTION ABOUT-->
-            <div class="main-about container d-flex" id="about">
+            <div class="main-about container d-flex flex-column flex-md-row justify-content-center" id="about">
                 <!--LEFT SECTION -->
-                <div class="about--left-item">
+                <div class="about--left-item text-center text-md-left w-100 w-md-auto">
                     <img src="/img/yo.jpeg" alt="">
                 </div>
                 <!-- RIGHT ITEM-->
-                <div class="about--right-item pl-5">
+                <div class="about--right-item pl-md-5  text-center text-md-left">
                     <h3><strong>About Me</strong></h3>
                     <p><strong>Fullstack Web Developer</strong></p>
                     <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, eos autem debitis similique maiores commodi animi minima quae eaque laboriosam nam aliquam optio dignissimos repudiandae numquam sapiente quasi praesentium nemo.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, eos autem debitis similique maiores commodi animi minima quae eaque laboriosam nam aliquam optio dignissimos repudiandae numquam sapiente quasi praesentium nemo.</p>
+                    <p>Hi everyone my name is Victor Gomez, I'm from Venezuela. I have 3 years of previous experience leading team and working with plenty technologies.</p>
+                    <p>Is a pleasure for me to help you to scalate your systems.</p>
                     <a class="button-see-work" href="#portfolio"><button class="button-primary">See Work</button></a>
                 </div>
             </div>
@@ -108,9 +108,9 @@
                     <img class="tech--item" src="/img/985px-Laravel.svg.png" alt="">
                     <img class="tech--item" src="/img/PHP-logo.svg.png" alt="">
                     <img class="tech--item" src="/img/Vue.js_Logo_2.svg.png" alt="">
-                    <img class="tech--item" src="/img/1024px-MySQL.ff87215b43fd7292af172e2a5d9b844217262571.png">
-                    <img class="tech--item" src="/img/2560px-AmazonWebservices_Logo.svg.png">
-                    <img class="tech--item" src="/img/nodejs-logo-FBE122E377-seeklogo.com.png">
+                    <img class="tech--item d-md-block d-none" src="/img/1024px-MySQL.ff87215b43fd7292af172e2a5d9b844217262571.png">
+                    <img class="tech--item d-md-block d-none" src="/img/2560px-AmazonWebservices_Logo.svg.png">
+                    <img class="tech--item d-md-block d-none" src="/img/nodejs-logo-FBE122E377-seeklogo.com.png">
                 </div>
             </div>
 
@@ -126,9 +126,9 @@
                 </ul>
 
                 <!-- Projects Table -->
-                <div class="row mt-5">
+                <div class="row mt-5 ">
                     @foreach ($projects as $project)
-                    <div class="col-4 mt-4">
+                    <div class="col-md-4 col-10 mt-4 projects--card-container">
                         <div class="projects--card card">
                             <div class="projects--card-thumb">
                                 <img src="{{$project->url_thumbnail}}" alt="">
@@ -163,8 +163,8 @@
                 </h2>
 
                 <!-- CARD SERVICES -->
-                <div class="row mt-5">
-                    <div class="services--card--container col-3">
+                <div class="row mt-3">
+                    <div class="services--card--container mt-2 col-md-3 col-12">
                         <div class="services--card">
                             <div class="services--card-icon">
                             <i class="fa-solid fa-terminal"></i>
@@ -179,7 +179,7 @@
                         </div>
                     </div>
 
-                    <div class="services--card--container col-3">
+                    <div class="services--card--container mt-2 col-md-3 col-12">
                         <div class="services--card">
                             <div class="services--card-icon">
                                 <i class="fa-solid fa-cloud"></i>
@@ -193,7 +193,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="services--card--container col-3">
+                    <div class="services--card--container mt-2 col-md-3 col-12">
                         <div class="services--card">
                             <div class="services--card-icon">
                                 <i class="fa-sharp fa-solid fa-microchip"></i>
@@ -208,7 +208,7 @@
                             </div>
                         </div>
                     </div>                    
-                    <div class="services--card--container col-3">
+                    <div class="services--card--container mt-2 col-md-3 col-12">
                         <div class="services--card">
                             <div class="services--card-icon">
                                 <i class="fa-solid fa-gears"></i>
@@ -234,7 +234,7 @@
 
                     <!-- CARD SERVICES -->
                     <div class="row mt-5">
-                        <div class="col-6">
+                        <div class="col-md-6 col-12">
                             <div class="contact--question d-flex">
                                 <div class="icon--contact d-flex align-items-start">
                                     <i class="fa-regular fa-envelope mt-2"></i>
@@ -256,7 +256,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 d-flex justify-content-end">
+                        <div class="col-md-6 col-12 d-flex justify-content-end mt-5 mt-md-0">
                             <div class="contact-form">
                                 <form action="{{url('sendMail')}}" method="post">
                                     @csrf
